@@ -14,5 +14,8 @@ manifest:
     - name: urchin-peripheral-animation
       remote: sgomezsal
       revision: main
+    - name: zmk-helpers
+      remote: urob
+      revision: main
   self:
     path: config
