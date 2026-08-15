@@ -4,9 +4,11 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: sgomezsal
       url-base: https://github.com/sgomezsal
+    - name: urob
+      url-base: https://github.com/urob
   projects:
     - name: zmk
-      remote: zmkfirmware
+      remote: urob
       revision: v0.3
       import: app/west.yml
     - name: urchin-peripheral-animation
