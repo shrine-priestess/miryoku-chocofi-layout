@@ -55,6 +55,8 @@
 &none  &lt 1 SQT    &kp J            &kp X         &kp K              &kp PERIOD    &kp B        &kp C               &kp M         &kp V        &lt 1 Z      &none
                                      &lt 2 ESC     &lt 3 SPACE        &lt 4 TAB     &lt 0 ENTER  &lt 0 BACKSPACE     &lt 5 DELETE
             >;
+
+            label = "choccy";
         };
 
         nav {
@@ -64,6 +66,8 @@
 &none  &none     &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(Z)        &kp INS   &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &none
                             &kp ESC    &kp SPACE  &kp TAB          &kp RET   &kp BSPC  &kp DEL
             >;
+
+            label = "nav";
         };
 
         num {
@@ -73,6 +77,8 @@
 &none  &none     &none     &none      &none      &none    &kp GRAVE  &kp N1  &kp N2   &kp N3  &kp BSLH   &none
                            &none      &none      &none    &kp MINUS  &kp N0  &kp DOT
             >;
+
+            label = "num";
         };
 
         sym {
@@ -82,6 +88,8 @@
 &none  &none     &none     &none      &none      &none    &kp LS(TILDE)  &kp LS(EXCL)  &kp LS(AT)     &kp LS(POUND)  &kp LS(PIPE)  &none
                            &none      &none      &none    &kp LS(UNDER)  &kp LS(LPAR)  &kp LS(RPAR)
             >;
+
+            label = "sym";
         };
 
         media {
@@ -91,6 +99,8 @@
 &none  &none       &none        &none       &none       &kp C_VOL_DN    &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &none
                                 &none       &none       &none           &none       &none         &none
             >;
+
+            label = "media";
         };
 
         func {
@@ -100,6 +110,8 @@
 &none  &none     &none     &none      &none      &none    &kp PAUSE_BREAK  &kp F1  &kp F2  &kp F3  &kp F10  &none
                            &none      &none      &none    &none            &none   &none
             >;
+
+            label = "func";
         };
     };
 };
