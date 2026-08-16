@@ -51,8 +51,17 @@
             bindings = <
 &none  &kp SLASH    &kp P            &kp O         &kp U              &kp Y         &kp Q        &kp G               &kp D         &kp L        &kp W        &none
 &none  &hml LGUI A  &hml LEFT_ALT H  &hml LCTRL E  &hml LEFT_SHIFT I  &kp COMMA     &kp F        &hmr RIGHT_SHIFT S  &hmr RCTRL T  &hmr LALT N  &hmr LGUI R  &none
-&none  &lt 3 SQT    &kp J            &kp X         &kp K              &kp PERIOD    &kp B        &kp C               &kp M         &kp V        &lt 3 Z      &none
-                                     &lt 1 ESC     &lt 2 SPACE        &lt 0 TAB     &lt 0 ENTER  &lt 0 BACKSPACE     &lt 0 DELETE
+&none  &lt 1 SQT    &kp J            &kp X         &kp K              &kp PERIOD    &kp B        &kp C               &kp M         &kp V        &lt 1 Z      &none
+                                     &lt 2 ESC     &lt 3 SPACE        &lt 0 TAB     &lt 0 ENTER  &lt 0 BACKSPACE     &lt 0 DELETE
+            >;
+        };
+
+        nav {
+            bindings = <
+&none  &none     &none      &none      &none      &kp LS(LC(Z))    &none     &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &none
+&none  &kp LGUI  &kp LALT   &kp LCTRL  &kp LSHFT  &kp LC(Y)        &kp CAPS  &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &none
+&none  &none     &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(Z)        &kp INS   &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &none
+                            &kp ESC    &kp SPACE  &kp TAB          &kp RET   &kp BSPC  &kp DEL
             >;
         };
 
@@ -71,15 +80,6 @@
 &none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none    &kp LS(COLON)  &kp LS(DLLR)  &kp LS(PRCNT)  &kp LS(CARET)  &kp LS(PLUS)  &none
 &none  &none     &none     &none      &none      &none    &kp LS(TILDE)  &kp LS(EXCL)  &kp LS(AT)     &kp LS(POUND)  &kp LS(PIPE)  &none
                            &none      &none      &none    &kp LS(UNDER)  &kp LS(LPAR)  &kp LS(RPAR)
-            >;
-        };
-
-        nav {
-            bindings = <
-&none  &none     &none      &none      &none      &kp LS(LC(Z))    &none     &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &none
-&none  &kp LGUI  &kp LALT   &kp LCTRL  &kp LSHFT  &kp LC(Y)        &kp CAPS  &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &none
-&none  &none     &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(Z)        &kp INS   &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &none
-                            &kp ESC    &kp SPACE  &kp TAB          &kp RET   &kp BSPC  &kp DEL
             >;
         };
     };
