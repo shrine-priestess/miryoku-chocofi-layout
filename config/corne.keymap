@@ -41,7 +41,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        base_layer {
+        choccy {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
             // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
@@ -51,44 +51,36 @@
             bindings = <
 &none  &kp SLASH    &kp P            &kp O         &kp U              &kp Y         &kp Q        &kp G               &kp D         &kp L        &kp W        &none
 &none  &hml LGUI A  &hml LEFT_ALT H  &hml LCTRL E  &hml LEFT_SHIFT I  &kp COMMA     &kp F        &hmr RIGHT_SHIFT S  &hmr RCTRL T  &hmr LALT N  &hmr LGUI R  &none
-&none  &lt 2 SQT    &kp J            &kp X         &kp K              &kp PERIOD    &kp B        &kp C               &kp M         &kp V        &lt 2 Z      &none
-                                     &lt 1 ESC     &lt 0 SPACE        &lt 0 TAB     &lt 3 ENTER  &lt 0 BACKSPACE     &lt 0 DELETE
+&none  &lt 3 SQT    &kp J            &kp X         &kp K              &kp PERIOD    &kp B        &kp C               &kp M         &kp V        &lt 3 Z      &none
+                                     &lt 1 ESC     &lt 2 SPACE        &lt 0 TAB     &lt 0 ENTER  &lt 0 BACKSPACE     &lt 0 DELETE
             >;
-
-            label = "Base";
         };
 
-        Numpad {
+        num {
             bindings = <
 &none  &none     &none     &none      &none      &none    &kp LBKT   &kp N7  &kp N8   &kp N9  &kp RBKT   &none
 &none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none    &kp SEMI   &kp N4  &kp N5   &kp N6  &kp EQUAL  &none
 &none  &none     &none     &none      &none      &none    &kp GRAVE  &kp N1  &kp N2   &kp N3  &kp BSLH   &none
                            &none      &none      &none    &kp MINUS  &kp N0  &kp DOT
             >;
-
-            label = "Numpad";
         };
 
-        Button {
+        sym {
+            bindings = <
+&none  &none     &none     &none      &none      &none    &kp LS(LBRC)   &kp LS(AMPS)  &kp LS(STAR)   &kp LS(LPAR)   &kp LS(RBRC)  &none
+&none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none    &kp LS(COLON)  &kp LS(DLLR)  &kp LS(PRCNT)  &kp LS(CARET)  &kp LS(PLUS)  &none
+&none  &none     &none     &none      &none      &none    &kp LS(TILDE)  &kp LS(EXCL)  &kp LS(AT)     &kp LS(POUND)  &kp LS(PIPE)  &none
+                           &none      &none      &none    &kp LS(UNDER)  &kp LS(LPAR)  &kp LS(RPAR)
+            >;
+        };
+
+        nav {
             bindings = <
 &none  &none     &none      &none      &none      &kp LS(LC(Z))    &none     &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &none
 &none  &kp LGUI  &kp LALT   &kp LCTRL  &kp LSHFT  &kp LC(Y)        &kp CAPS  &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &none
-&none  &none     &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(Z)        &kp INS   &none     &none      &none      &none      &none
-                            &trans     &trans     &trans           &trans    &trans    &trans
+&none  &none     &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(Z)        &kp INS   &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &none
+                            &kp ESC    &kp SPACE  &kp TAB          &kp RET   &kp BSPC  &kp DEL
             >;
-
-            label = "Button";
-        };
-
-        Symbols {
-            bindings = <
-&none  &kp LEFT_BRACE  &kp AMPERSAND    &kp KP_MULTIPLY       &kp LEFT_PARENTHESIS   &kp RIGHT_BRACE    &none  &none            &none      &none          &none     &none
-&none  &kp COLON       &kp DOLLAR       &kp PERCENT           &kp CARET              &kp PLUS           &none  &kp RIGHT_SHIFT  &kp RCTRL  &kp RIGHT_ALT  &kp LGUI  &none
-&none  &kp TILDE       &kp EXCLAMATION  &kp AT_SIGN           &kp HASH               &kp PIPE           &none  &none            &none      &none          &none     &none
-                                        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE     &none  &none            &none
-            >;
-
-            label = "Symbol";
         };
     };
 };
