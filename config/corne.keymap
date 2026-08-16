@@ -62,7 +62,7 @@
 
         nav {
             bindings = <
-&none  &none     &none      &none      &none      &kp LS(LC(Z))    &kp CAPS    &none     &none      &none      &none      &none
+&none  &none     &none      &none      &none      &kp LS(LC(Z))    &kp CAPS    &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &none
 &none  &kp LGUI  &kp LALT   &kp LCTRL  &kp LSHFT  &kp LC(Y)        &caps_word  &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &none
 &none  &none     &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(Z)        &kp INS     &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &none
                             &kp ESC    &kp SPACE  &kp TAB          &kp RET     &kp BSPC  &kp DEL
@@ -76,7 +76,7 @@
 &none  &none     &none     &none      &none      &none    &kp LBKT   &kp N7  &kp N8   &kp N9  &kp RBKT   &none
 &none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none    &kp SEMI   &kp N4  &kp N5   &kp N6  &kp EQUAL  &none
 &none  &none     &none     &none      &none      &none    &kp GRAVE  &kp N1  &kp N2   &kp N3  &kp BSLH   &none
-                           &none      &mo 7      &none    &kp MINUS  &kp N0  &kp DOT
+                           &none      &mo 6      &none    &kp MINUS  &kp N0  &kp DOT
             >;
 
             label = "num";
@@ -109,21 +109,10 @@
 &none  &none     &none     &none      &none      &none    &kp PSCRN        &kp F7  &kp F8  &kp F9  &kp F12  &none
 &none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none    &none            &kp F4  &kp F5  &kp F6  &kp F11  &none
 &none  &none     &none     &none      &none      &none    &kp PAUSE_BREAK  &kp F1  &kp F2  &kp F3  &kp F10  &none
-                           &none      &none      &none    &none            &mo 6   &none
+                           &none      &none      &none    &none            &mo 7   &none
             >;
 
             label = "func";
-        };
-
-        rst_R {
-            bindings = <
-&none  &none  &none  &none  &none  &none    &none        &none  &none  &none  &none        &none
-&none  &none  &none  &none  &none  &none    &bootloader  &none  &none  &none  &none        &none
-&none  &none  &none  &none  &none  &none    &none        &none  &none  &none  &bootloader  &none
-                     &none  &none  &none    &none        &none  &none
-            >;
-
-            label = "rst_R";
         };
 
         rst_L {
@@ -135,6 +124,17 @@
             >;
 
             label = "rst_L";
+        };
+
+        rst_R {
+            bindings = <
+&none  &none  &none  &none  &none  &none    &none        &none  &none  &none  &none        &none
+&none  &none  &none  &none  &none  &none    &bootloader  &none  &none  &none  &none        &none
+&none  &none  &none  &none  &none  &none    &none        &none  &none  &none  &bootloader  &none
+                     &none  &none  &none    &none        &none  &none
+            >;
+
+            label = "rst_R";
         };
     };
 };
